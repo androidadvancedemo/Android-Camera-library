@@ -28,6 +28,7 @@ public class MainActivity extends Activity implements OnClickListener, OnPicture
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		   StartAppAd.init(MainActivity.this, "103205820", "203170552");
 		setContentView(R.layout.activity_main);
 		
 		 StartAppAd.showSplash(this, savedInstanceState,
@@ -36,7 +37,7 @@ public class MainActivity extends Activity implements OnClickListener, OnPicture
 						.setLogo(R.drawable.ic_launcher)
 						.setAppName("Camera Demo")
 			);
-	        StartAppAd.init(MainActivity.this, "103205820", "203170552");
+	     
 
 	        StartAppAd.showSlider(this);
 	    	startAppAd.loadAd(); // load the next ad
